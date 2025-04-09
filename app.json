@@ -1,0 +1,9 @@
+{
+  "name": "zomatoclone",
+  "displayName": "zomatoclone",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-8718538892555022~8870770466",
+    "ios_app_id": "ca-app-pub-xxxxxxxx~xxxxxxxx"
+  }
+
+}
