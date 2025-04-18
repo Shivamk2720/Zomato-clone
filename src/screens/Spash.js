@@ -15,7 +15,7 @@ const Spash = () => {
   return (
     <View style={mystyles.container}>
       <StatusBar backgroundColor={THEME_COLOR} barStyle="light-content" />
-      <Image source={require('../images/logo.png')} style={mystyles.logo} />
+      <Image source={require('../images/sprint_deliver.png')} style={mystyles.logo} />
     </View>
   );
 };

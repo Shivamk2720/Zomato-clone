@@ -9,12 +9,13 @@ import {THEME_COLOR} from '../strings';
 import Tab1 from '../tabs/Tab1';
 import Tab2 from '../tabs/Tab2';
 import Tab3 from '../tabs/Tab3';
+import ZomalandScreen from '../tabs/Tab3';
 
 const MainScreen = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   return (
     <View style={styles.container}>
-      {selectedTab == 0 ? <Tab1 /> : selectedTab == 1 ? <Tab2 /> : <Tab3 />}
+      {selectedTab == 0 ? <Tab1 /> : selectedTab == 1 ? <Tab2 /> : <ZomalandScreen/>}
       <View style={styles.bottomNavigationView}>
         <TouchableOpacity
           style={styles.tab}
@@ -102,7 +103,7 @@ const MainScreen = () => {
                 styles.tabTitle,
                 {color: selectedTab == 2 ? '#000' : '#8e8e8e'},
               ]}>
-              Zomaland
+              Sprintland
             </Text>
           </View>
         </TouchableOpacity>

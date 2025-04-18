@@ -5,10 +5,12 @@ import Contact from './async/Contact';
 import Intro from './async/Intro';
 import Login from './screens/Login';
 import MainScreen from './screens/MainScreen';
+import EventDetailScreen from './screens/EventDetailScreen';
 
 import Spash from './screens/Spash';
 import RestaurantDetail from './screens/RestaurantDetail';
 import UserProfileScreen from './screens/UserProfile';
+import CartScreen from './screens/CartScreen';
 
 const Stack = createStackNavigator();
 const AppNavigator = () => {
@@ -38,6 +40,16 @@ const AppNavigator = () => {
         <Stack.Screen
           component={UserProfileScreen}
           name="userProfile"
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+         name="EventDetail"
+         component={EventDetailScreen} 
+         options={{headerShown: false}}
+        />
+        <Stack.Screen 
+          name="CartScreen"
+          component={CartScreen} 
           options={{headerShown: false}}
         />
       </Stack.Navigator>
